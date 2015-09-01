@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_contacto" value="name:idContacto;datatype:int,name:strTelefono_01;datatype:string,name:strTelefono_02;datatype:string,name:strEmail_01;datatype:string,name:strEmail_02;datatype:string,name:strHorario;datatype:string,name:txtLatitud;datatype:string,name:strLongitud;datatype:string,name:txtDireccion;datatype:blob,name:txtParrafoCorto;datatype:blob" />
+</info>

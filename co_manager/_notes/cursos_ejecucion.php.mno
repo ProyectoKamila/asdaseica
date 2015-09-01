@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_calendario" value="name:idCalendario;datatype:int,name:intOfertaAcademica;datatype:int,name:intMes;datatype:int,name:intAno;datatype:int,name:datFecha_01;datatype:date,name:datFecha_02;datatype:date,name:datFecha_03;datatype:date,name:datFecha_04;datatype:date,name:datFecha_05;datatype:date,name:datFecha_06;datatype:date,name:intCupo;datatype:int,name:intEstado;datatype:int" />
+	<infoitem key="UD_cursos" value="name:idCurso;datatype:int,name:intOferta;datatype:int,name:intCalen;datatype:int,name:strFolio;datatype:string,name:txtInfor_Extra;datatype:blob,name:intEstado;datatype:int" />
+</info>

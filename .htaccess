@@ -1,0 +1,101 @@
+<Files 403.shtml>
+
+order allow,deny
+
+allow from all
+
+</Files>
+
+
+
+Options +FollowSymlinks
+
+
+
+RewriteEngine on
+
+#rewritecond %{http_host} ^aseica.com.ve [nc]
+
+#rewriterule ^(.*)$ http://www.aseica.com.ve/$1 [R=301,nc]
+
+
+
+RewriteRule ^(inicio) index.php [L]
+
+
+
+RewriteRule ^(somos) somos.php [L]
+
+
+
+RewriteRule ^(servicios) servicios.php [L]
+
+
+
+RewriteRule ^(objetivos) objetivos.php [L]
+
+
+
+RewriteRule ^(oferta_academica) oferta.php [L]
+
+
+
+RewriteRule ^(open_oferta) abierto.php [L]
+
+
+
+RewriteRule ^(company_oferta) company.php [L]
+
+
+
+RewriteRule ^ver_company_oferta-(.+)_([0-9]+)$ vercompa.php?id=$2 [L]
+
+
+
+RewriteRule ^ver_open_oferta_([0-9]+)$ abierto.php?mesele=$1 [L]
+
+
+
+RewriteRule ^ver_ofer-(.+)_([0-9]+)$ ver_oferta.php?cat=$2 [L]
+
+
+
+RewriteRule ^eleg_oferta-(.+)_([0-9]+)_([0-9]+)$ abierto_elegido.php?id=$2&mes=$3 [L]
+
+
+
+RewriteRule ^inscripcion_abierta-(.+)_([0-9]+)_([0-9]+)$ inscri_abi.php?id=$2&ca=$3 [L]
+
+
+
+RewriteRule ^inscribir_empresa-(.+)_([0-9]+)_([0-9]+) inscri_empresa.php?id=$2&ob=$3 [L]
+
+
+
+RewriteRule ^(galeria) galeria.php [L]
+
+
+
+RewriteRule ^cat_galer-(.+)_([0-9]+)$ galeria.php?cat=$2 [L]
+
+
+
+RewriteRule ^(contacto) contacto.php [L]
+
+
+
+RewriteRule ^(validar_pago) validar_pago.php [L]
+
+RewriteRule ^(impulso_extrategico) impulso_extrategico.php [L]
+
+RewriteRule ^(plataforma_al_exito) plataforma_al_exito.php [L]
+
+RewriteRule ^(inscripcion_boletin) inscripcion_boletin.php [L]
+
+RewriteRule ^(repetido_bole_repe) inscripcion_boletin_ok.php [L]
+
+
+RewriteRule ^platos/pais_([a-zA-Z_-]+)\.php$ codigo/platos_pais.php?nombre_pais=$1
+
+
+

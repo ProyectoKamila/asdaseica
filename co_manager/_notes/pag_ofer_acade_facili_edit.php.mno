@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_facilitador" value="name:idFacilitador;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:txtInformacion;datatype:blob,name:intEstado;datatype:int" />
+</info>

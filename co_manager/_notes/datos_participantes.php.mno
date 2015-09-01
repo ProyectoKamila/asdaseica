@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_participantes" value="name:idParticipantes;datatype:int,name:strNombre;datatype:string,name:strApellido;datatype:string,name:strTelefono;datatype:string,name:intEmpresa;datatype:int,name:strCargo;datatype:string,name:strEmail;datatype:string,name:intCurso_Asistido;datatype:int,name:datFecha_Asistida;datatype:date,name:intEstado;datatype:int" />
+</info>

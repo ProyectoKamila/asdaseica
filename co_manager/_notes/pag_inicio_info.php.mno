@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_info" value="name:idInfo;datatype:int,name:strTitulo;datatype:string,name:txtImagen;datatype:blob,name:txtParrafo;datatype:blob,name:intEstado;datatype:int" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_pago" value="name:idPago;datatype:int,name:intPre_Inscri;datatype:int,name:intOferta;datatype:int,name:intCurso;datatype:int,name:intTipo_Pago;datatype:int,name:strBanco;datatype:string,name:strMonto;datatype:string,name:strReferencia;datatype:string,name:datFecha_Pago;datatype:date,name:intEstado;datatype:int" />
+</info>

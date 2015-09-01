@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:idAdmin;datatype:int,name:intPrimera;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:strEmail;datatype:string,name:strPass;datatype:string,name:strPreg_Secre;datatype:string,name:strResp_Secre;datatype:string,name:intNivel;datatype:int,name:intEstado;datatype:int" />
+	<infoitem key="UD_tipo" value="name:idTipo;datatype:int,name:strTipo;datatype:string" />
+</info>

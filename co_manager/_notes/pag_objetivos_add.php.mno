@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_objetivo" value="name:idObjetivo;datatype:int,name:strTutulo;datatype:blob,name:txtPar_Cor;datatype:blob,name:txtImagen;datatype:blob,name:intEstado;datatype:int" />
+</info>

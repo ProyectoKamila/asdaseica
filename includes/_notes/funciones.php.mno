@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Conexion" value="name:idParticipante;datatype:int,name:intCurso;datatype:int,name:intPaticiapante;datatype:int,name:intEstado;datatype:int" />
+</info>

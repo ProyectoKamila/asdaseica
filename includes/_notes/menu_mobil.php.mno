@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_redes" value="name:idRed;datatype:int,name:strTitulo;datatype:string,name:txtUrl;datatype:blob,name:strTitulo_Cort;datatype:string,name:strI_clae;datatype:string,name:strIcon;datatype:string,name:idUrl;datatype:string,name:intEstado;datatype:int" />
+	<infoitem key="UD_info" value="name:idContacto;datatype:int,name:strTelefono_01;datatype:string,name:strTelefono_02;datatype:string,name:strEmail_01;datatype:string,name:strEmail_02;datatype:string,name:strHorario;datatype:string,name:txtMapa;datatype:blob,name:txtDireccion;datatype:blob,name:txtParrafoCorto;datatype:blob,name:strTituloMapa;datatype:string" />
+</info>

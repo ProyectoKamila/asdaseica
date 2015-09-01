@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_empresas" value="name:idEmpresa;datatype:int,name:strNombre;datatype:string,name:strRazon_Social;datatype:string,name:strRif;datatype:string,name:strTelefono_01;datatype:string,name:strTelefono_02;datatype:string,name:strTelefono_03;datatype:string,name:strEmail_01;datatype:string,name:strEmail_02;datatype:string,name:strEmail_03;datatype:string,name:txtDireccion;datatype:blob,name:intEstado;datatype:int" />
+</info>

@@ -1,0 +1,25 @@
+/**
+ *
+ * Apply your custom CSS here
+ *
+*/
+
+body {	
+}
+
+a {
+}
+
+.ilega {
+	font-size: 36px;
+	color: #F00;
+}
+.imagen_peq {
+	width: 100px;
+	border: 2px solid #999;
+}
+.imagen_peq img {
+	text-decoration: none;
+	max-height: 100%;
+	max-width: 100%;
+}

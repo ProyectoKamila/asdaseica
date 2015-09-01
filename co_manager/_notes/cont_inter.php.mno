@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_cont_inter" value="name:idContacto;datatype:int,name:strNombre;datatype:string,name:strApellido;datatype:string,name:strTelefono_01;datatype:string,name:strTelefono_02;datatype:string,name:strEmail_01;datatype:string,name:strEmail_02;datatype:string,name:strFacebook;datatype:string,name:strTwitter;datatype:string,name:strLinkedin;datatype:string,name:strInstagran;datatype:string,name:strGooglePlus;datatype:string,name:strCompania;datatype:string,name:strCargo;datatype:string,name:intEstado;datatype:int" />
+</info>

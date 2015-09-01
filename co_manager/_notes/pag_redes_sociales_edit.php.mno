@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_Recordset1" value="name:idAdmin;datatype:int,name:intPrimera;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:strEmail;datatype:string,name:strPass;datatype:string,name:strPreg_Secre;datatype:string,name:strResp_Secre;datatype:string,name:intNivel;datatype:int,name:intEstado;datatype:int" />
+	<infoitem key="UD_redes_sociales" value="name:idRed;datatype:int,name:strTitulo;datatype:string,name:txtUrl;datatype:blob,name:strTitulo_Cort;datatype:string,name:strI_clae;datatype:string,name:strIcon;datatype:string,name:idUrl;datatype:string,name:intEstado;datatype:int" />
+</info>

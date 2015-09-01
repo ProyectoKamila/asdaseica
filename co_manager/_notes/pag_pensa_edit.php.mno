@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_pensamiento" value="name:idPensamiento;datatype:int,name:strTitulo;datatype:string,name:intDia;datatype:int,name:txtParrafo;datatype:blob,name:intEstado;datatype:int" />
+</info>

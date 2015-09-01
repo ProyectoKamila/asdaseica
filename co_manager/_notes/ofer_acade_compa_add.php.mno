@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_facilitador1" value="name:idFacilitador;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:txtInformacion;datatype:blob,name:intEstado;datatype:int" />
+	<infoitem key="UD_facilitador2" value="name:idFacilitador;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:txtInformacion;datatype:blob,name:intEstado;datatype:int" />
+	<infoitem key="UD_facilitador3" value="name:idFacilitador;datatype:int,name:strNombre;datatype:string,name:txtImagen;datatype:blob,name:txtInformacion;datatype:blob,name:intEstado;datatype:int" />
+	<infoitem key="UD_ano" value="name:idAno;datatype:int,name:strAno;datatype:string" />
+	<infoitem key="UD_areas" value="name:idArea;datatype:int,name:strDescripcion;datatype:string" />
+	<infoitem key="UD_tipos" value="name:idTipo;datatype:int,name:strTipo;datatype:string" />
+	<infoitem key="UD_modalidad" value="name:idModalidad;datatype:int,name:strModalidad;datatype:string" />
+	<infoitem key="UD_verifi" value="name:idCompanias;datatype:int,name:strTitulo;datatype:string,name:txtImagen_Peq;datatype:blob,name:strDuracion;datatype:string,name:strHorario;datatype:string,name:strFec_Inicio;datatype:string,name:txtDirigido_A;datatype:blob,name:txtObj_Gene;datatype:blob,name:txtObj_Espc_Cont;datatype:blob,name:strCosto;datatype:string,name:intFacilitador;datatype:int,name:intFacilitador2;datatype:int,name:intFacilitador3;datatype:int,name:txtInf_Adici;datatype:blob,name:txtBeneficios;datatype:blob,name:txtIncluye;datatype:blob,name:intArea;datatype:int,name:intTipo_Ofer;datatype:int,name:intModalidad;datatype:int,name:txtImagen_01;datatype:blob,name:txtVideo_01;datatype:blob,name:intEstado;datatype:int" />
+</info>

@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_sliders" value="name:idSlider;datatype:int,name:strTitulo;datatype:string,name:intEstilo;datatype:int,name:txtImagen;datatype:blob,name:txtTexto_01;datatype:blob,name:txtTexto_02;datatype:blob,name:txtTexto_03;datatype:blob,name:txtTexto_04;datatype:blob,name:txtTexto_05;datatype:blob,name:txtTexto_06;datatype:blob,name:txtTexto_07;datatype:blob,name:txtTexto_08;datatype:blob,name:txtTexto_09;datatype:blob,name:txtTexto_10;datatype:blob,name:txtVideo;datatype:blob,name:intEstado;datatype:int" />
+</info>

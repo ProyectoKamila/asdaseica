@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_servicios" value="name:idValores;datatype:int,name:strTitulo;datatype:string,name:txtTexto;datatype:blob,name:txtImagen;datatype:blob,name:intEstado;datatype:int" />
+</info>
