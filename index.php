@@ -62,7 +62,7 @@ $totalRows_slider = mysql_num_rows($slider);
 <!doctype html>
 <html><!-- InstanceBegin template="/Templates/Base_Pagina_01.dwt.php" codeOutsideHTMLIsLocked="false" -->
 <head>
-<meta charset="iso-8859-1">
+<meta charset="UTF-8">
 <!-- InstanceBeginEditable name="doctitle" -->
 <title>Academia de Servicios Educativos Integrales</title>
 <!-- InstanceEndEditable -->
@@ -83,8 +83,8 @@ $totalRows_slider = mysql_num_rows($slider);
 <![endif]-->
 
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
-<link rel="stylesheet" type="text/css" href="css/inline.min.css" />
-
+<link rel="stylesheet" type="text/css" href="css/inline.css" />
+<link rel="stylesheet" type="text/css" href="css/pk.css" />
 
 <!-- LayerSlider -->
 <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
@@ -125,10 +125,21 @@ $(document).ready(function(){
         skinsPath : 'layerslider/skins/',
         skin : 'borderlessdark3d',
         thumbnailNavigation : 'hover',
+        height: 380,
         hoverPrevNext : false,
         autoPlayVideos : false
     });
 });		
+function boletin(){
+  console.log("bot");
+  $("#c1").addClass("suscriber-form-active");
+  $("#d2").attr("onclick","ocultar()");
+}
+function ocultar(){
+  console.log("hidde");
+  $("#c1").removeClass("suscriber-form-active");
+  $("#d2").attr("onclick","boletin()");
+}
 </script>
 
 
@@ -136,7 +147,34 @@ $(document).ready(function(){
 </head>
 
 <body>
+<div id="c1" class="suscriber-form">
+  <div class="foot-widget-title" id="boletin"> Boletín ASEICA</div>
+  <p>Enterate de lo más importate del mundo Gerencial</p>
+ 	<form action="inscripcion_boletin" method="post" name="form1">
 
+<label for="titulo" class="news-button" >Titulo</label>
+<select name="titulo" class="news-tb" >
+<option value="1" <?php if (!(strcmp(1, ""))) {echo "SELECTED";} ?>>Sr.</option>
+<option value="2" <?php if (!(strcmp(2, ""))) {echo "SELECTED";} ?>>Srta.</option>
+<option value="3" <?php if (!(strcmp(3, ""))) {echo "SELECTED";} ?>>Sra.</option>
+<option value="4" <?php if (!(strcmp(4, ""))) {echo "SELECTED";} ?>>Lic.</option>
+<option value="5" <?php if (!(strcmp(5, ""))) {echo "SELECTED";} ?>>Licda.</option>
+<option value="6" <?php if (!(strcmp(6, ""))) {echo "SELECTED";} ?>>MSc.</option>
+<option value="7" <?php if (!(strcmp(7, ""))) {echo "SELECTED";} ?>>Dr.</option>
+<option value="8" <?php if (!(strcmp(8, ""))) {echo "SELECTED";} ?>>Dra.</option>
+</select>
+<div class="clearfix"></div>
+<label for="nombre" class="news-button">Nombre</label>
+<input type="text" class="news-tb" name="nombre" id="nombre" />
+<div class="clearfix"></div>
+<label for="apellido" class="news-button">Apellido</label>
+<input type="text" class="news-tb" name="apellido" id="apellido" />
+<div class="clearfix"></div>
+<input name="email" type="text" class="news-tb" id="email" placeholder="Email" />
+<button class="news-button">Suscribirse</button>
+<input type="hidden" name="MM_insert" value="form1">
+</form>
+ </div>  
 <!--<div id="loader-overlay"><img src="../images/loader.gif" alt="Loading" /></div>-->
 
 <header>
@@ -154,14 +192,23 @@ $(document).ready(function(){
 
 <!--Topbar-->
 <div class="topbar-info no-pad fondo_negro">                    
-<div class="container">                     
-<div class="social-wrap-head col-md-9 no-pad letras_supe">ACADEMIA DE SERVICIOS EDUCATIVOS INTEGRALES &nbsp;&nbsp;&nbsp;&nbsp;<span class="let_pqn">J-29560193-0</span></div>                            
-<div class="top-info-contact pull-right col-md-3">
-<ul>
-<?php include("includes/redes_sociales.php"); ?>
-</ul>
-<div id="search" class="fa fa-search search-head"></div>
-</div>                      
+<div class="container">       
+
+<div class="social-wrap-head col-col-xs-12 no-pad letras_supe">ACADEMIA DE SERVICIOS EDUCATIVOS INTEGRALES &nbsp;&nbsp;&nbsp;&nbsp;<span class="let_pqn">J-29560193-0</span>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-8">
+      <div class="redes-top">
+      <ul>
+      <?php include("includes/redes_sociales.php"); ?>
+      </ul>
+  </div>
+  
+</div>  
+  </div>
+</div>
+
+</div>                            
 </div>
 </div><!--Topbar-info-close-->
 
@@ -169,27 +216,35 @@ $(document).ready(function(){
 
 <div class="top-bar container">
 <div class="row fonfo_blanco">
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-customizer" role="navigation">
 <div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-header">
-
-<button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-<span class="sr-only">Toggle navigation</span>
-</button>
-<button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-<span class="sr-only">Toggle navigation</span>
-</button>
-
-<a href="index.html"><div class="logo"><img src="imagenes/logo/logo-pequeno-2.png"></div></a>
+<div class="navbar-header col-lg-2 col-md-2 col-xs-12">
+      
+      <button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      </button>
+      <button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+      <span class="sr-only">Toggle navigation</span>
+      </button>
+        
+      <a href="index.php"><div class="logo"><img src="imagenes/logo/logo-pequeno-2.png"></div></a>
 </div>
 
 <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="col-lg-7 col-md-7S col-sm-6 col-xs-12">
+<div class="collapse navbar-collapse colla" id="bs-example-navbar-collapse-1">
+  
+<ul class="nav navbar-nav  nav-pills nav-pills-customizer">
 <?php include("includes/menu_supe.php"); ?>
 </ul>
-</div><!-- /.navbar-collapse -->
+</div>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">BOLETÍN ASEICA</a>
+</div>
+
+<!-- /.navbar-collapse -->
 
 <div class="hide-mid collapse navbar-collapse option-drop" id="bs-example-navbar-collapse-2">
 
@@ -211,126 +266,174 @@ $(document).ready(function(){
 <div class="complete-content">
 
 <!-- InstanceBeginEditable name="Contenido" -->
-
+<div class="container">
+  <div class="row">
 <!--Start LayerSlider-->
-<div id="layerslider-container">
-
-<div id="layerslider"style="width: 960px; height: 420px; margin: 0 auto;">
-<?php do { ?>
-
-<?php if ($row_slider['intEstilo'] == 1) { ?>
-<div class="ls-layer"style="slidedelay: 7500; transition2d: 24,25,27,28,34,35,37,38,110,113; ">
-
-<img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
-
-<?php if ($row_slider['txtTexto_01'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl1" style="top: 100px; left: 50%; slidedirection : fade; slideoutdirection : top; durationout : 1500; scalein : 0; showuntil : 1000;"><?php echo $row_slider['txtTexto_01']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_02'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 green" style="top:200px; left: 50%; slidedirection: fade; slideoutdirection : bottom; durationout : 1500; scalein : 0; showuntil : 1000;"><?php echo $row_slider['txtTexto_02']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_03'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 244px; slidedirection : fade; durationin : 2000; delayin : 2000; rotatein : -90; rotateout : -90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_03']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_04'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 365px; slidedirection : fade; slideoutdirection : top; durationin : 1500; easingin : easeInOutQuart; delayin : 1600; scalein : 5;"><?php echo $row_slider['txtTexto_04']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_05'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 635px; slidedirection : fade; durationin : 2000; delayin : 2200; rotatein : 90; rotateout : 90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_05']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_06'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 black" style="top:175px; left: 244px; slidedirection : fade; slideoutdirection : left; durationin : 1500; easingin : easeInOutQuart; delayin : 1800; scalein : 5;"><?php echo $row_slider['txtTexto_06']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_07'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 black"style="top:175px; left: 510px; slidedirection : fade; slideoutdirection : right; durationin : 1500; easingin : easeInOutQuart; delayin : 1500; scalein : 5;"><?php echo $row_slider['txtTexto_07']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_08'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 244px; slidedirection : fade; durationin : 2000; delayin : 2100; rotatein : 90; rotateout : 90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_08']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_09'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 358px; slidedirection : fade; slideoutdirection : bottom; durationin : 1500; easingin : easeInOutQuart; delayin : 1700; scalein : 5;"><?php echo $row_slider['txtTexto_09']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_10'] != '') { ?>
-<h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 562px; slidedirection : fade; durationin : 2000; delayin : 2300; rotatein : -90; rotateout : -90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_10']; ?></h5>
-<?php } ?>
-
+    <div id="layerslider-container">
+  
+  <div id="layerslider"style="width: 960px; height: 420px; margin: 0 auto;">
+  <?php do { ?>
+  
+  <?php if ($row_slider['intEstilo'] == 1) { ?>
+  <div class="ls-layer"style="slidedelay: 7500; transition2d: 24,25,27,28,34,35,37,38,110,113; ">
+  
+  <img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
+  
+  <?php if ($row_slider['txtTexto_01'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl1" style="top: 100px; left: 50%; slidedirection : fade; slideoutdirection : top; durationout : 1500; scalein : 0; showuntil : 1000;"><?php echo $row_slider['txtTexto_01']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_02'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 green" style="top:200px; left: 50%; slidedirection: fade; slideoutdirection : bottom; durationout : 1500; scalein : 0; showuntil : 1000;"><?php echo $row_slider['txtTexto_02']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_03'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 244px; slidedirection : fade; durationin : 2000; delayin : 2000; rotatein : -90; rotateout : -90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_03']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_04'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 365px; slidedirection : fade; slideoutdirection : top; durationin : 1500; easingin : easeInOutQuart; delayin : 1600; scalein : 5;"><?php echo $row_slider['txtTexto_04']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_05'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 green" style="top:100px; left: 635px; slidedirection : fade; durationin : 2000; delayin : 2200; rotatein : 90; rotateout : 90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_05']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_06'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 black" style="top:175px; left: 244px; slidedirection : fade; slideoutdirection : left; durationin : 1500; easingin : easeInOutQuart; delayin : 1800; scalein : 5;"><?php echo $row_slider['txtTexto_06']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_07'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 black"style="top:175px; left: 510px; slidedirection : fade; slideoutdirection : right; durationin : 1500; easingin : easeInOutQuart; delayin : 1500; scalein : 5;"><?php echo $row_slider['txtTexto_07']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_08'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 244px; slidedirection : fade; durationin : 2000; delayin : 2100; rotatein : 90; rotateout : 90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_08']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_09'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 358px; slidedirection : fade; slideoutdirection : bottom; durationin : 1500; easingin : easeInOutQuart; delayin : 1700; scalein : 5;"><?php echo $row_slider['txtTexto_09']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_10'] != '') { ?>
+  <h5 class="ls-s-1 br5 c sl2 grey"style="top:250px; left: 562px; slidedirection : fade; durationin : 2000; delayin : 2300; rotatein : -90; rotateout : -90; scalein : 2.5; scaleout : 0;"><?php echo $row_slider['txtTexto_10']; ?></h5>
+  <?php } ?>
+  
+  </div>
+  <?php } ?>
+  
+  <?php if ($row_slider['intEstilo'] == 2) { ?>
+  <div class="ls-layer" style="slidedelay: 7000; transition2d: 76,77,78,79; ">
+  
+  <img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
+  
+  <?php if ($row_slider['txtTexto_01'] != '') { ?>
+  <h5 class="ls-s-1 plus1" style="top:100px; left: 100px; slidedirection : fade; slideoutdirection : fade; durationin : 750; durationout : 1500; easingin : easeOutQuint; rotatein : 90; rotateout : 90; scalein : .5; scaleout : .5;"><?php echo $row_slider['txtTexto_01']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_02'] != '') { ?>
+  <h5 class="ls-s1 text6" style="top:103px; left: 165px; slidedirection : left; slideoutdirection : left; durationout : 1500; easingin : easeOutBack; scalein : .1; scaleout : .1;"><?php echo $row_slider['txtTexto_02']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_03'] != '') { ?>
+  <h5 class="ls-s-1 plus1" style="top:160px; left: 100px; slidedirection : fade; slideoutdirection : fade; durationin : 1500; durationout : 950; easingin : easeOutQuint; delayin : 500; rotatein : 90; rotateout : 90; scalein : .5; scaleout : .5;"><?php echo $row_slider['txtTexto_03']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_04'] != '') { ?>
+  <h5 class="ls-s1 text6" style="top:163px; left: 165px; slidedirection : left; slideoutdirection : left; durationout : 1500; easingin : easeOutBack; delayin : 900; scalein : .1; scaleout : .1;"><?php echo $row_slider['txtTexto_04']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_05'] != '') { ?>
+  <h5 class="ls-s-1 text2 br100" style="top:80%; left: 50%; slidedirection : bottom; slideoutdirection : bottom; durationin : |550; durationout : 1500; easingin : easeOutQuint; delayin : 1000; scalein : .5;"><?php echo $row_slider['txtTexto_05']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_06'] != '') { ?>
+  <h5 class="ls-s6 text-a" style="top:79%; left: 57%; slidedirection : fade; slideoutdirection : fade; easingin : easeOutQuint; delayin : 1650; scalein : 3; scaleout : 3;"><?php echo $row_slider['txtTexto_06']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_07'] != '') { ?>
+  <h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 2150; scalein : 0; scaleout : 3; showuntil : 51;"><?php echo $row_slider['txtTexto_07']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_08'] != '') { ?>
+  <h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 1650; easingin : easeOutQuart; easingout : easeInQuart; delayin : 3650; scalein : 0; scaleout : 3; showuntil : 51;"><?php echo $row_slider['txtTexto_08']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_09'] != '') { ?>
+  <h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 5150; scalein : 0; scaleout : 3;"><?php echo $row_slider['txtTexto_09']; ?></h5>
+  <?php } ?>
+  
+  <?php if ($row_slider['txtTexto_10'] != '') { ?>
+  <h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 5150; scalein : 0; scaleout : 3;"><?php echo $row_slider['txtTexto_10']; ?></h5>
+  <?php } ?>
+  
+  </div>
+  <?php } ?>
+  
+  <?php if ($row_slider['intEstilo'] == 3) { ?>
+  <div class="ls-layer"style="slidedelay: 4000; transition2d: 92,93; ">
+  
+  <img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
+  
+  <div class="ls-s-1" style="top:0px; left: 0px; slidedirection: fade; slideoutdirection: fade; durationin: 2500; durationout: 1500;">
+  <?php echo $row_slider['txtVideo']; ?>
+  </div>
+  
+  </div>
+  <?php } ?>
+  
+  <?php } while ($row_slider = mysql_fetch_assoc($slider)); ?>
+  </div>
+  
+  </div>
+  <!--End LayerSlider-->
+  <div class="clearfix"></div>
+    <div class="container-fluid">
+      <div class="row">
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <div class="hd">
+    <div class="icon"> <span class="fa fa-thumbs-up fa-4x"></span></div>
+      <div class="texto">
+        Emprendedores
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <div class="hd">
+    <div class="icon"> <span class="fa fa-area-chart fa-4x"></span></div>
+      <div class="texto">
+        plataforma al exito
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <div class="hd">
+        <div class="icon"><span class="fa fa-4x fa-users"></span></div>
+        <div class="texto">
+          Cursos
+        </div>
+      </div>
+  </div>
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <div class="hd">
+      <div class="icon"><span class="fa fa-4x fa-line-chart"></span></div>
+      <div class="texto">
+        impulso estrategico
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <div class="hd">
+      <div class="icon"><span class="fa fa-4x  fa-newspaper-o"></span></div>
+      <div class="texto">
+        noticias del blog
+      </div>
+    </div>
+  </div>
+  </div>
+    </div>
+  </div>
 </div>
-<?php } ?>
-
-<?php if ($row_slider['intEstilo'] == 2) { ?>
-<div class="ls-layer" style="slidedelay: 7000; transition2d: 76,77,78,79; ">
-
-<img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
-
-<?php if ($row_slider['txtTexto_01'] != '') { ?>
-<h5 class="ls-s-1 plus1" style="top:100px; left: 100px; slidedirection : fade; slideoutdirection : fade; durationin : 750; durationout : 1500; easingin : easeOutQuint; rotatein : 90; rotateout : 90; scalein : .5; scaleout : .5;"><?php echo $row_slider['txtTexto_01']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_02'] != '') { ?>
-<h5 class="ls-s1 text6" style="top:103px; left: 165px; slidedirection : left; slideoutdirection : left; durationout : 1500; easingin : easeOutBack; scalein : .1; scaleout : .1;"><?php echo $row_slider['txtTexto_02']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_03'] != '') { ?>
-<h5 class="ls-s-1 plus1" style="top:160px; left: 100px; slidedirection : fade; slideoutdirection : fade; durationin : 1500; durationout : 950; easingin : easeOutQuint; delayin : 500; rotatein : 90; rotateout : 90; scalein : .5; scaleout : .5;"><?php echo $row_slider['txtTexto_03']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_04'] != '') { ?>
-<h5 class="ls-s1 text6" style="top:163px; left: 165px; slidedirection : left; slideoutdirection : left; durationout : 1500; easingin : easeOutBack; delayin : 900; scalein : .1; scaleout : .1;"><?php echo $row_slider['txtTexto_04']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_05'] != '') { ?>
-<h5 class="ls-s-1 text2 br100" style="top:80%; left: 50%; slidedirection : bottom; slideoutdirection : bottom; durationin : |550; durationout : 1500; easingin : easeOutQuint; delayin : 1000; scalein : .5;"><?php echo $row_slider['txtTexto_05']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_06'] != '') { ?>
-<h5 class="ls-s6 text-a" style="top:79%; left: 57%; slidedirection : fade; slideoutdirection : fade; easingin : easeOutQuint; delayin : 1650; scalein : 3; scaleout : 3;"><?php echo $row_slider['txtTexto_06']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_07'] != '') { ?>
-<h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 2150; scalein : 0; scaleout : 3; showuntil : 51;"><?php echo $row_slider['txtTexto_07']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_08'] != '') { ?>
-<h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 1650; easingin : easeOutQuart; easingout : easeInQuart; delayin : 3650; scalein : 0; scaleout : 3; showuntil : 51;"><?php echo $row_slider['txtTexto_08']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_09'] != '') { ?>
-<h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 5150; scalein : 0; scaleout : 3;"><?php echo $row_slider['txtTexto_09']; ?></h5>
-<?php } ?>
-
-<?php if ($row_slider['txtTexto_10'] != '') { ?>
-<h5 class="ls-s-1 text7 br100" style="top:50%; left: 60%; slidedirection : fade; slideoutdirection : fade; durationin : 850; easingin : easeOutQuart; easingout : easeInQuart; delayin : 5150; scalein : 0; scaleout : 3;"><?php echo $row_slider['txtTexto_10']; ?></h5>
-<?php } ?>
-
-</div>
-<?php } ?>
-
-<?php if ($row_slider['intEstilo'] == 3) { ?>
-<div class="ls-layer"style="slidedelay: 4000; transition2d: 92,93; ">
-
-<img src="imagenes/slider_prin/<?php echo $row_slider['txtImagen']; ?>" class="ls-bg" alt="<?php echo $row_slider['strTitulo']; ?>">
-
-<div class="ls-s-1" style="top:0px; left: 0px; slidedirection: fade; slideoutdirection: fade; durationin: 2500; durationout: 1500;">
-<?php echo $row_slider['txtVideo']; ?>
-</div>
-
-</div>
-<?php } ?>
-
-<?php } while ($row_slider = mysql_fetch_assoc($slider)); ?>
-</div>
-
-</div>
-<!--End LayerSlider-->
 
 <div class="parallax-out wpb_row vc_row-fluid ihome-parallax">    
 
@@ -339,7 +442,10 @@ $(document).ready(function(){
 <div class="container">
 <div class="row">
 
-<div class="bg col-lg-4 col-sm-4 col-md-5 col-xs-12 notViewed wow fadeInUp" data-wow-delay="1.5s" data-wow-offset="200"></div>
+<div class=" col-lg-4 col-sm-4 col-md-5 col-xs-12 notViewed wow fadeInUp" data-wow-delay="1.5s" data-wow-offset="200" style="background:none !important;">
+<a class="twitter-timeline" href="https://twitter.com/aseicadevzla" data-widget-id="639169187022282752">Tweets por el @aseicadevzla.</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
 
 <div class="float-right col-lg-7 col-sm-7 col-md-7 col-xs-12">
 

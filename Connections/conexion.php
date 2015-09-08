@@ -8,9 +8,9 @@ if (!isset($_SESSION)) {
 # Type="MYSQL"
 # HTTP="true"
 $hostname_conexion = "localhost";
-$database_conexion = "aseicaco_pagina";
-$username_conexion = "aseicaco_pagina";
-$password_conexion = "Q@IdoAqLs^bUZ~K6";
+$database_conexion = "aseica";
+$username_conexion = "pkadmin";
+$password_conexion = "";
 $conexion = mysql_pconnect($hostname_conexion, $username_conexion, $password_conexion) or trigger_error(mysql_error(),E_USER_ERROR); 
 ?>
 <?php

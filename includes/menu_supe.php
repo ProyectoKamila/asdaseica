@@ -1,12 +1,14 @@
-<meta charset="utf-8">
+
 
 <li<?php if ($pg == 1) { ?> class="active" <?php } ?> ><a href="inicio">Inicio</a></li>
 
 <li <?php if ($pg == 2) { ?> class="active" <?php } ?>><a href="somos">¿Quiénes somos?</a></li>
 
-<li <?php if ($pg == 3) { ?> class="active" <?php } ?>><a href="open_oferta">Cursos</a></li>
+<!--<li <?php if ($pg == 3) { ?> class="active" <?php } ?>><a href="open_oferta">Cursos</a></li>-->
+<li <?php if ($pg == 3) { ?> class="active" <?php } ?>><a href="servicios">Servicios</a></li>
 
 <li <?php if ($pg == 7) { ?> class="active" <?php } ?>><a href="contacto">Contacto</a></li>
+
 
 <!--
 <li <?php if ($pg == 4) { ?> class="active" <?php } ?>><a href="objetivos">Objetivos</a></li>

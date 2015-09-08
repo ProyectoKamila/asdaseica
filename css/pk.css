@@ -1,0 +1,179 @@
+/*Estillo de 01-09-2015*/
+.navbar-customizer{
+    background:none !important;
+    height: 110px !important;
+    width:100%;
+    overflow:hidden;
+        margin-top: -10px;
+    position:relative;
+}
+.redes-top{
+    margin-top:-45px;
+}
+#headerstic{
+    background:rgba(255,255,255,0.9) !important;
+}
+.fonfo_blanco{
+    background:rgba(255,255,255,0.0) !important;
+}
+.topbar-info{
+    border-bottom:0px !important;
+}
+.navbar-customizer > .container-fluid, .navbar-header , .logo{
+    position:relative;
+    height:100%;
+    overflow:hidden;
+    
+}
+.navbar-header{
+     margin-right: -0px !important; 
+     margin-left: -0px !important; 
+}
+.logo{
+    width:auto !important;
+}
+.logo img{
+    height:90% !important;
+    width:auto;
+}
+.navbar-customizer .colla{
+    height:100%;
+    position:relative;
+}
+.navbar-customizer .colla .nav-pills-customizer{
+    background: none;
+    overflow: hidden;
+    height: 111px;
+    position:relative;
+}
+ .nav-pills-customizer > li{
+     height:100%;
+     margin-left:10px;
+     background:none;
+     text-align:center;
+     transition:0.3s all ease-in-out;
+ }
+ .nav-pills-customizer li a{
+    padding-top: 46px !important;
+    padding-bottom: 44px !important;
+    border-radius: 0px !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    z-index:9;
+    text-align:center;
+    font-weight:200 !important;
+ }
+ .nav-pills-customizer li a:before{
+       content: '';
+    width: 20px !important;
+    background: #FFF !important;
+    height: 2px !important;
+    position: absolute;
+     top: 0% !important;
+    left: 0.5% !important;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index:-1;
+ }
+ .nav-pills-customizer li:hover , .nav-pills-customizer .active {
+        background: #1D8CCA !important;
+        color: white !important;
+        
+ }
+ .nav-pills-customizer li:hover a , .nav-pills-customizer li.active a{
+     color:white !important;
+     background: #1D8CCA !important;
+ }
+ .nav-pills-customizer li:hover a:before , .nav-pills-customizer li.active  a:before{
+    content: '';
+    width: 20px !important;
+    background: #FFF !important;
+    height: 2px !important;
+    position: absolute;
+     top: 80% !important;
+    left: 0.5% !important;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    z-index:-1;
+ }
+ .btn-customizer{
+     background:#1D8CCA;
+     color:white;
+     padding:10px;
+     margin-top:30px;
+ }
+ .suscriber-form{
+     max-width:400px;
+     width:100%;
+     height:260px;
+     background:white;
+     position:absolute;
+     top:-150%;
+     z-index: 9999999999;
+     right:7%;
+     transition:.4s all ease-in-out;
+ }
+ .suscriber-form-active{
+     top:22% !important;
+     right:7%;
+ }
+.suscriber-form  .foot-widget-title{
+    width:100%;
+    text-align:center;
+    color:#1D8CCA;
+}
+.suscriber-form p{
+    text-align:center;
+}
+.suscriber-form .news-button{
+    line-height:18px;
+}
+@media (max-width:990px){
+    .navbar-customizer{
+        height:auto !important;
+    
+    }
+    .nav-customizer li{
+        height:40px;
+    }
+    .nav-customizer .logo{
+        height:90px;
+    }
+    .navbar-customizer .colla .nav-pills-customizer {
+    background: none;
+    overflow: hidden;
+    height: 34px;
+    position: relative;
+}
+.logo img {
+    height: 91px !important;
+    width: auto;
+    margin-top: 10px;
+}
+}
+.icon{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+    display:block;
+    margin:0 auto;
+}
+.icon span{
+    text-align:center;
+    padding:20px 25px;
+    color:#1D8CCA;
+}
+.texto{
+    text-align:center;
+    color:black;
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:200;
+}
+.hd{
+    overflow:hidden;
+}

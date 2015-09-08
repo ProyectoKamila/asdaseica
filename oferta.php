@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta charset="UTF-8">
 <title>Academia de Servicios Educativos Integrales</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="icon" type="image/png" href="imagenes/logo/favicon.ico" />
@@ -19,6 +19,7 @@
 <![endif]-->
 <link rel="stylesheet" type="text/css" href="css/slides.css" />
 <link rel="stylesheet" type="text/css" href="css/inline.min.css" />
+<link rel="stylesheet" type="text/css" href="css/pk.css" />
 <!-- LayerSlider -->
 <link rel="stylesheet" href="layerslider/css/layerslider.css" type="text/css">
 <link rel="stylesheet" href="layerslider/assets/css/style.css" type="text/css">
@@ -67,6 +68,36 @@ $(document).ready(function(){
 
 <div id="loader-overlay"><img src="images/loader.gif" alt="Loading" /></div>
 
+<div id="c1" class="suscriber-form">
+  <div class="foot-widget-title" id="boletin"> Boletín ASEICA</div>
+  <p>Enterate de lo más importate del mundo Gerencial</p>
+ 	<form action="inscripcion_boletin" method="post" name="form1">
+
+<label for="titulo" class="news-button" >Titulo</label>
+<select name="titulo" class="news-tb" >
+<option value="1" <?php if (!(strcmp(1, ""))) {echo "SELECTED";} ?>>Sr.</option>
+<option value="2" <?php if (!(strcmp(2, ""))) {echo "SELECTED";} ?>>Srta.</option>
+<option value="3" <?php if (!(strcmp(3, ""))) {echo "SELECTED";} ?>>Sra.</option>
+<option value="4" <?php if (!(strcmp(4, ""))) {echo "SELECTED";} ?>>Lic.</option>
+<option value="5" <?php if (!(strcmp(5, ""))) {echo "SELECTED";} ?>>Licda.</option>
+<option value="6" <?php if (!(strcmp(6, ""))) {echo "SELECTED";} ?>>MSc.</option>
+<option value="7" <?php if (!(strcmp(7, ""))) {echo "SELECTED";} ?>>Dr.</option>
+<option value="8" <?php if (!(strcmp(8, ""))) {echo "SELECTED";} ?>>Dra.</option>
+</select>
+<div class="clearfix"></div>
+<label for="nombre" class="news-button">Nombre</label>
+<input type="text" class="news-tb" name="nombre" id="nombre" />
+<div class="clearfix"></div>
+<label for="apellido" class="news-button">Apellido</label>
+<input type="text" class="news-tb" name="apellido" id="apellido" />
+<div class="clearfix"></div>
+<input name="email" type="text" class="news-tb" id="email" placeholder="Email" />
+<button class="news-button">Suscribirse</button>
+<input type="hidden" name="MM_insert" value="form1">
+</form>
+ </div>  
+<!--<div id="loader-overlay"><img src="../images/loader.gif" alt="Loading" /></div>-->
+
 <header>
             
 <div class="header-bg">
@@ -82,14 +113,23 @@ $(document).ready(function(){
 
 <!--Topbar-->
 <div class="topbar-info no-pad fondo_negro">                    
-<div class="container">                     
-<div class="social-wrap-head col-md-9 no-pad letras_supe">ACADEMIA DE SERVICIOS EDUCATIVOS INTEGRALES</div                          
-><div class="top-info-contact pull-right col-md-3">
-<ul>
-<?php include("includes/redes_sociales.php"); ?>
-</ul>
-<div id="search" class="fa fa-search search-head"></div>
-</div>                      
+<div class="container">       
+
+<div class="social-wrap-head col-col-xs-12 no-pad letras_supe">ACADEMIA DE SERVICIOS EDUCATIVOS INTEGRALES &nbsp;&nbsp;&nbsp;&nbsp;<span class="let_pqn">J-29560193-0</span>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-3 col-xs-offset-8">
+      <div class="redes-top">
+      <ul>
+      <?php include("includes/redes_sociales.php"); ?>
+      </ul>
+  </div>
+  
+</div>  
+  </div>
+</div>
+
+</div>                            
 </div>
 </div><!--Topbar-info-close-->
 
@@ -97,28 +137,35 @@ $(document).ready(function(){
 
 <div class="top-bar container">
 <div class="row fonfo_blanco">
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default navbar-customizer" role="navigation">
 <div class="container-fluid">
 <!-- Brand and toggle get grouped for better mobile display -->
-<div class="navbar-header">
-
-<button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-<span class="sr-only">Toggle navigation</span>
-</button>
-<button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-<span class="sr-only">Toggle navigation</span>
-</button>
-
-<a href="inicio"><div class="logo"><img src="imagenes/logo/logo-pequeno-2.png"></div></a>
-<div class="clearfix"></div>
+<div class="navbar-header col-lg-2 col-md-2 col-xs-12">
+      
+      <button type="button" class="navbar-toggle icon-list-ul" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      </button>
+      <button type="button" class="navbar-toggle icon-rocket" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+      <span class="sr-only">Toggle navigation</span>
+      </button>
+        
+      <a href="index.php"><div class="logo"><img src="imagenes/logo/logo-pequeno-2.png"></div></a>
 </div>
 
 <!-- Collect the nav links, forms, and other content for toggling -->
-<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-<ul class="nav navbar-nav navbar-right">
+<div class="col-lg-7 col-md-7S col-sm-6 col-xs-12">
+<div class="collapse navbar-collapse colla" id="bs-example-navbar-collapse-1">
+  
+<ul class="nav navbar-nav  nav-pills nav-pills-customizer">
 <?php include("includes/menu_supe.php"); ?>
 </ul>
-</div><!-- /.navbar-collapse -->
+</div>
+</div>
+<div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
+  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">BOLETÍN ASEICA</a>
+</div>
+
+<!-- /.navbar-collapse -->
 
 <div class="hide-mid collapse navbar-collapse option-drop" id="bs-example-navbar-collapse-2">
 
@@ -136,6 +183,7 @@ $(document).ready(function(){
 </div>
 
 </header>
+
 
 <div class="complete-content">
 <div class="about-intro-wrap pull-left">

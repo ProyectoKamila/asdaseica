@@ -40,8 +40,8 @@
 
 <!--Foot widget-->
 <div class="col-xs-12 col-sm-6 col-md-4 foot-widget">
-<div class="foot-widget-title">Boletín ASEICA</div>
-<p>Enterate de lo más importate del mundo Gerencial</p>
+<div class="foot-widget-title" id="boletin"> Boletín ASEICA</div>
+ <p>Enterate de lo más importate del mundo Gerencial</p>
 <div class="news-subscribe">
 <form action="inscripcion_boletin" method="post" name="form1">
 
@@ -76,7 +76,7 @@
 </ul>
 </div>
 </div>  
-        
+      
 <!--Foot widget
 <div class="col-xs-12 col-sm-6 col-md-3 recent-post-foot foot-widget">
 <div class="foot-widget-title">Recent Posts</div>
