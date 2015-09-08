@@ -58,10 +58,10 @@
 </select>
 <div class="clearfix"></div>
 <label for="nombre" class="news-button">Nombre</label>
-<input type="text" class="news-tb" name="nombre" id="nombre" />
+<input type="text" class="news-tb" name="nombre" id="nombre" placeholder="Nombre"/>
 <div class="clearfix"></div>
 <label for="apellido" class="news-button">Apellido</label>
-<input type="text" class="news-tb" name="apellido" id="apellido" />
+<input type="text" class="news-tb" name="apellido" id="apellido" placeholder="apellido"/>
 <div class="clearfix"></div>
 <input name="email" type="text" class="news-tb" id="email" placeholder="Email" />
 <button class="news-button">Suscribirse</button>

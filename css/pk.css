@@ -52,6 +52,7 @@
      background:none;
      text-align:center;
      transition:0.3s all ease-in-out;
+     float:left;
  }
  .nav-pills-customizer li a{
     padding-top: 46px !important;
@@ -132,13 +133,14 @@
 .suscriber-form .news-button{
     line-height:18px;
 }
-@media (max-width:990px){
+@media (max-width:991px){
     .navbar-customizer{
         height:auto !important;
     
     }
     .nav-customizer li{
         height:40px;
+        float:left;
     }
     .nav-customizer .logo{
         height:90px;
