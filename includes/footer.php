@@ -19,28 +19,14 @@
         
 <!--Foot widget-->
 <div class="col-xs-12 col-sm-6 col-md-4 recent-post-foot foot-widget">
-
-<a class="twitter-timeline" href="https://twitter.com/ASEICAdevzla" data-widget-id="530826877217165312">Tweets por @ASEICAdevzla</a>
-<script>
-!function(d,s,id){
-	var js,fjs=d.getElementsByTagName(s)[0],
-		p=/^http:/.test(d.location)?'http':'https';
-		if(!d.getElementById(id)){
-			js=d.createElement(s);
-			js.id=id;
-			js.src=p+"://platform.twitter.com/widgets.js";
-			fjs.parentNode.insertBefore(js,fjs);
-		}
-}
-(document,"script","twitter-wjs");
-</script>
-
+<!-- www.intagme.com -->
+<iframe src="http://www.intagme.com/in/?u=YXNlaWNhZGV2emxhfHNsfDMwMHw0fDJ8fG5vfDV8dW5kZWZpbmVkfHllcw==" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:305px; height: 305px" ></iframe>
 </div>
 
 
 <!--Foot widget-->
 <div class="col-xs-12 col-sm-6 col-md-4 foot-widget">
-<div class="foot-widget-title" id="boletin"> Boletín ASEICA</div>
+<div class="foot-widget-title" id="boletin"> REGISTRATE</div>
  <p>Enterate de lo más importate del mundo Gerencial</p>
 <div class="news-subscribe">
 <form action="inscripcion_boletin" method="post" name="form1">
@@ -50,11 +36,6 @@
 <option value="1" <?php if (!(strcmp(1, ""))) {echo "SELECTED";} ?>>Sr.</option>
 <option value="2" <?php if (!(strcmp(2, ""))) {echo "SELECTED";} ?>>Srta.</option>
 <option value="3" <?php if (!(strcmp(3, ""))) {echo "SELECTED";} ?>>Sra.</option>
-<option value="4" <?php if (!(strcmp(4, ""))) {echo "SELECTED";} ?>>Lic.</option>
-<option value="5" <?php if (!(strcmp(5, ""))) {echo "SELECTED";} ?>>Licda.</option>
-<option value="6" <?php if (!(strcmp(6, ""))) {echo "SELECTED";} ?>>MSc.</option>
-<option value="7" <?php if (!(strcmp(7, ""))) {echo "SELECTED";} ?>>Dr.</option>
-<option value="8" <?php if (!(strcmp(8, ""))) {echo "SELECTED";} ?>>Dra.</option>
 </select>
 <div class="clearfix"></div>
 <label for="nombre" class="news-button">Nombre</label>

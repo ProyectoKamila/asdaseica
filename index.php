@@ -148,7 +148,7 @@ function ocultar(){
 
 <body>
 <div id="c1" class="suscriber-form">
-  <div class="foot-widget-title" id="boletin"> Boletín ASEICA</div>
+  <div class="foot-widget-title" id="boletin"> Registrate</div>
   <p>Enterate de lo más importate del mundo Gerencial</p>
  	<form action="inscripcion_boletin" method="post" name="form1">
 
@@ -157,11 +157,6 @@ function ocultar(){
 <option value="1" <?php if (!(strcmp(1, ""))) {echo "SELECTED";} ?>>Sr.</option>
 <option value="2" <?php if (!(strcmp(2, ""))) {echo "SELECTED";} ?>>Srta.</option>
 <option value="3" <?php if (!(strcmp(3, ""))) {echo "SELECTED";} ?>>Sra.</option>
-<option value="4" <?php if (!(strcmp(4, ""))) {echo "SELECTED";} ?>>Lic.</option>
-<option value="5" <?php if (!(strcmp(5, ""))) {echo "SELECTED";} ?>>Licda.</option>
-<option value="6" <?php if (!(strcmp(6, ""))) {echo "SELECTED";} ?>>MSc.</option>
-<option value="7" <?php if (!(strcmp(7, ""))) {echo "SELECTED";} ?>>Dr.</option>
-<option value="8" <?php if (!(strcmp(8, ""))) {echo "SELECTED";} ?>>Dra.</option>
 </select>
 <div class="clearfix"></div>
 <label for="nombre" class="news-button">Nombre</label>
@@ -241,7 +236,7 @@ function ocultar(){
 </div>
 </div>
 <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
-  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">BOLETÍN ASEICA</a>
+  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">REGISTRATE</a>
 </div>
 
 <!-- /.navbar-collapse -->
@@ -392,43 +387,52 @@ function ocultar(){
       <div class="row">
   <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
     <div class="hd">
+      <a href="http://www.aseica.com.ve/blog">
     <div class="icon"> <span class="fa fa-thumbs-up fa-4x"></span></div>
       <div class="texto">
         Emprendedores
       </div>
+      </a>
     </div>
   </div>
   <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
-    <div class="hd">
-    <div class="icon"> <span class="fa fa-area-chart fa-4x"></span></div>
-      <div class="texto">
-        plataforma al exito
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
-    <div class="hd">
-        <div class="icon"><span class="fa fa-4x fa-users"></span></div>
-        <div class="texto">
-          Cursos
+    <a href="http://aseica.com.ve/oferta_academica">
+      <div class="hd">
+          <div class="icon"><span class="fa fa-4x fa-users"></span></div>
+          <div class="texto">
+            Cursos
+          </div>
         </div>
-      </div>
+    </a>
   </div>
   <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
-    <div class="hd">
+    <a href="http://aseica.com.ve/plataforma_al_exito">
+      <div class="hd">
+      <div class="icon"> <span class="fa fa-area-chart fa-4x"></span></div>
+        <div class="texto">
+          plataforma para emprendedores
+        </div>
+        </a>
+    </div>
+  </div>
+  <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <a href="https://asdaseica-pkadmin.c9.io/impulso_extrategico">
       <div class="icon"><span class="fa fa-4x fa-line-chart"></span></div>
       <div class="texto">
         impulso estrategico
       </div>
+    </a>
     </div>
-  </div>
+  
   <div class="col-sm-4 col-xs-6 col-md-4 col-lg-2">
+    <a href="https://asdaseica-pkadmin.c9.io/blog">
     <div class="hd">
       <div class="icon"><span class="fa fa-4x  fa-newspaper-o"></span></div>
       <div class="texto">
         noticias del blog
       </div>
     </div>
+    </a>
   </div>
   </div>
     </div>
@@ -455,7 +459,10 @@ function ocultar(){
 <div class="subtitle notViewed wow fadeInRight" data-wow-delay="0.5s" data-wow-offset="20">cursos</div>
 <ul>
 <li class="notViewed wow fadeInDown" data-wow-delay="0.5s" data-wow-offset="50">
-<a href="company_oferta"><i class="icon-hospital2 icon-list-icons"></i>
+<a href="company_oferta">
+  <i class=" icon-list-icons ">
+  <span class="fa fa-building"></span>
+</i>
 <div class="iconlist-content">
 
 <div class="iconlist-title">In Company</div>
@@ -466,7 +473,17 @@ function ocultar(){
 
 <li class="notViewed wow fadeInDown" data-wow-delay="0.5s" data-wow-offset="60">
 <a href="open_oferta">
-<i class="fa fa-user-md icon-list-icons"></i>
+<i class="fa fa-users icon-list-icons"></i>
+<div class="iconlist-content">
+
+<div class="iconlist-title">Cursos Abiertos</div>
+<p class="iconlist-text">Visite nuestra oferta de cursos abiertos y encuentre ese conocimiento que espec&iacute;ficamente necesita para su crecimiento profesional.</p>
+</div>
+</a>
+</li>
+<li class="notViewed wow fadeInDown" data-wow-delay="0.5s" data-wow-offset="60">
+<a href="open_oferta">
+<i class="fa fa-users icon-list-icons"></i>
 <div class="iconlist-content">
 
 <div class="iconlist-title">Cursos Abiertos</div>

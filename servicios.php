@@ -121,10 +121,7 @@ $(document).ready(function(){
 <option value="1" <?php if (!(strcmp(1, ""))) {echo "SELECTED";} ?>>Sr.</option>
 <option value="2" <?php if (!(strcmp(2, ""))) {echo "SELECTED";} ?>>Srta.</option>
 <option value="3" <?php if (!(strcmp(3, ""))) {echo "SELECTED";} ?>>Sra.</option>
-<option value="4" <?php if (!(strcmp(4, ""))) {echo "SELECTED";} ?>>Lic.</option>
-<option value="5" <?php if (!(strcmp(5, ""))) {echo "SELECTED";} ?>>Licda.</option>
-<option value="6" <?php if (!(strcmp(6, ""))) {echo "SELECTED";} ?>>MSc.</option>
-<option value="7" <?php if (!(strcmp(7, ""))) {echo "SELECTED";} ?>>Dr.</option>
+
 <option value="8" <?php if (!(strcmp(8, ""))) {echo "SELECTED";} ?>>Dra.</option>
 </select>
 <div class="clearfix"></div>
@@ -205,7 +202,7 @@ $(document).ready(function(){
 </div>
 </div>
 <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
-  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">BOLETÍN ASEICA</a>
+  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">REGISTRATE</a>
 </div>
 
 <!-- /.navbar-collapse -->
@@ -308,7 +305,18 @@ $tie = $tie + 0.4;
 </div>
 
 </div>
-
+<script >
+  function boletin(){
+  console.log("bot");
+  $("#c1").addClass("suscriber-form-active");
+  $("#d2").attr("onclick","ocultar()");
+}
+function ocultar(){
+  console.log("hidde");
+  $("#c1").removeClass("suscriber-form-active");
+  $("#d2").attr("onclick","boletin()");
+}
+</script>
 </body>
 <!-- InstanceEnd --></html>
 <?php

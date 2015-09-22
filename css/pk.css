@@ -43,31 +43,41 @@
 .navbar-customizer .colla .nav-pills-customizer{
     background: none;
     overflow: hidden;
-    height: 111px;
+    height: 51px;
     position:relative;
+    margin-top:26px;
+      background: #0079c1;
+    background: linear-gradient(to bottom,#0079c1 0,#00529b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1, endColorstr=#00529b, GradientType=0);
+    border-radius: 5px;
 }
  .nav-pills-customizer > li{
      height:100%;
-     margin-left:10px;
-     background:none;
      text-align:center;
      transition:0.3s all ease-in-out;
      float:left;
+     background: url("../imagenes/separador-menu.png") left center no-repeat #0079c1 !important;
  }
  .nav-pills-customizer li a{
-    padding-top: 46px !important;
-    padding-bottom: 44px !important;
+      padding-top: 26px !important; 
+    /*padding-bottom: 44px !important;*/
     border-radius: 0px !important;
     padding-left: 30px;
     padding-right: 30px;
-    z-index:9;
-    text-align:center;
-    font-weight:200 !important;
+    z-index: 9;
+    text-align: center;
+    font-weight: 200 !important;
+    line-height: 0.5;
+    color:white !important;
+        background: #0079c1;
+    background: linear-gradient(to bottom,#0079c1 0,#00529b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1, endColorstr=#00529b, GradientType=0);
+    border-radius: 5px;
  }
  .nav-pills-customizer li a:before{
        content: '';
     width: 20px !important;
-    background: #FFF !important;
+    
     height: 2px !important;
     position: absolute;
      top: 0% !important;
@@ -77,20 +87,26 @@
     -webkit-transition: all .5s ease-in-out;
     -o-transition: all .5s ease-in-out;
     z-index:-1;
+    opacity:0;
  }
  .nav-pills-customizer li:hover , .nav-pills-customizer .active {
-        background: #1D8CCA !important;
+     
         color: white !important;
-        
+           background: #0079c1;
+   
  }
  .nav-pills-customizer li:hover a , .nav-pills-customizer li.active a{
      color:white !important;
-     background: #1D8CCA !important;
+            background: #0079c1 !important;
+    background: linear-gradient(to bottom,#0079c1 0,#00529b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1, endColorstr=#00529b, GradientType=0);
+    
+  
  }
  .nav-pills-customizer li:hover a:before , .nav-pills-customizer li.active  a:before{
     content: '';
     width: 20px !important;
-    background: #FFF !important;
+    
     height: 2px !important;
     position: absolute;
      top: 80% !important;
@@ -102,10 +118,16 @@
     z-index:-1;
  }
  .btn-customizer{
-     background:#1D8CCA;
+              background: #0079c1 !important;
+    background: linear-gradient(to bottom,#0079c1 0,#00529b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#0079c1, endColorstr=#00529b, GradientType=0) !important;
      color:white;
      padding:10px;
      margin-top:30px;
+ }
+ .btn-customizer:hover{
+     color:white;
+     background: #0079c1 !important;
  }
  .suscriber-form{
      max-width:400px;

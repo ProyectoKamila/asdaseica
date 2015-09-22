@@ -168,7 +168,7 @@ $(document).ready(function(){
 </div>
 </div>
 <div class="col-lg-2 col-md-2 hidden-sm hidden-xs">
-  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">BOLETÍN ASEICA</a>
+  <a id="d2" onclick="boletin();" class="btn btn-default btn-customizer">REGISTRATE</a>
 </div>
 
 <!-- /.navbar-collapse -->
@@ -437,7 +437,18 @@ $("#map-canvas").gMap({
 </div>
 
 </div>
-
+<script >
+  function boletin(){
+  console.log("bot");
+  $("#c1").addClass("suscriber-form-active");
+  $("#d2").attr("onclick","ocultar()");
+}
+function ocultar(){
+  console.log("hidde");
+  $("#c1").removeClass("suscriber-form-active");
+  $("#d2").attr("onclick","boletin()");
+}
+</script>
 </body>
 </html>
 <?php  //  mysql_free_result($contacto);?>
